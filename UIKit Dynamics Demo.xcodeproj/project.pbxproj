@@ -77,6 +77,16 @@
 			name = Transitions;
 			sourceTree = "<group>";
 		};
+		B11DC9A4198D4D9600904C17 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B155055519816930003BA89B /* GravityFirstViewController.swift */,
+				B155055719816930003BA89B /* QuizViewController.swift */,
+				B152F697198911DB006081AF /* TransitionViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		B155054519816930003BA89B = {
 			isa = PBXGroup;
 			children = (
@@ -98,9 +108,7 @@
 		B155055019816930003BA89B /* UIKit Dynamics Demo */ = {
 			isa = PBXGroup;
 			children = (
-				B155055519816930003BA89B /* GravityFirstViewController.swift */,
-				B155055719816930003BA89B /* QuizViewController.swift */,
-				B152F697198911DB006081AF /* TransitionViewController.swift */,
+				B11DC9A4198D4D9600904C17 /* ViewControllers */,
 				B11DC99F198CE23100904C17 /* Transitions */,
 				B155055919816930003BA89B /* Main.storyboard */,
 				B155055C19816930003BA89B /* Images.xcassets */,
