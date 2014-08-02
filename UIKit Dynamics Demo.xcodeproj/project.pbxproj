@@ -10,6 +10,7 @@
 		B11DC99E198CDF8800904C17 /* PushOffTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11DC99D198CDF8800904C17 /* PushOffTransition.swift */; };
 		B11DC9A1198CEADD00904C17 /* SwipeInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11DC9A0198CEADD00904C17 /* SwipeInTransition.swift */; };
 		B11DC9A3198D20D300904C17 /* SwingInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11DC9A2198D20D300904C17 /* SwingInTransition.swift */; };
+		B11DC9A6198D4E7900904C17 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B11DC9A5198D4E7900904C17 /* README.md */; };
 		B13C937A198ACA8700728A5B /* DropInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13C9379198ACA8700728A5B /* DropInTransition.swift */; };
 		B152F698198911DB006081AF /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B152F697198911DB006081AF /* TransitionViewController.swift */; };
 		B155055419816930003BA89B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B155055319816930003BA89B /* AppDelegate.swift */; };
@@ -34,6 +35,7 @@
 		B11DC99D198CDF8800904C17 /* PushOffTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushOffTransition.swift; sourceTree = "<group>"; };
 		B11DC9A0198CEADD00904C17 /* SwipeInTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeInTransition.swift; sourceTree = "<group>"; };
 		B11DC9A2198D20D300904C17 /* SwingInTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwingInTransition.swift; sourceTree = "<group>"; };
+		B11DC9A5198D4E7900904C17 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		B13C9379198ACA8700728A5B /* DropInTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropInTransition.swift; sourceTree = "<group>"; };
 		B152F697198911DB006081AF /* TransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
 		B155054E19816930003BA89B /* UIKit Dynamics Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKit Dynamics Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 		B155055119816930003BA89B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B11DC9A5198D4E7900904C17 /* README.md */,
 				B155055319816930003BA89B /* AppDelegate.swift */,
 				B155055219816930003BA89B /* Info.plist */,
 			);
@@ -248,6 +251,7 @@
 				B11DC9A1198CEADD00904C17 /* SwipeInTransition.swift in Sources */,
 				B11DC9A3198D20D300904C17 /* SwingInTransition.swift in Sources */,
 				B155055419816930003BA89B /* AppDelegate.swift in Sources */,
+				B11DC9A6198D4E7900904C17 /* README.md in Sources */,
 				B155055619816930003BA89B /* GravityFirstViewController.swift in Sources */,
 				B152F698198911DB006081AF /* TransitionViewController.swift in Sources */,
 			);
