@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B11DC99E198CDF8800904C17 /* PushOffTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11DC99D198CDF8800904C17 /* PushOffTransition.swift */; };
+		B11DC9A1198CEADD00904C17 /* SwipeInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11DC9A0198CEADD00904C17 /* SwipeInTransition.swift */; };
+		B11DC9A3198D20D300904C17 /* SwingInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11DC9A2198D20D300904C17 /* SwingInTransition.swift */; };
+		B13C937A198ACA8700728A5B /* DropInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13C9379198ACA8700728A5B /* DropInTransition.swift */; };
+		B152F698198911DB006081AF /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B152F697198911DB006081AF /* TransitionViewController.swift */; };
 		B155055419816930003BA89B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B155055319816930003BA89B /* AppDelegate.swift */; };
-		B155055619816930003BA89B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B155055519816930003BA89B /* FirstViewController.swift */; };
-		B155055819816930003BA89B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B155055719816930003BA89B /* SecondViewController.swift */; };
+		B155055619816930003BA89B /* GravityFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B155055519816930003BA89B /* GravityFirstViewController.swift */; };
+		B155055819816930003BA89B /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B155055719816930003BA89B /* QuizViewController.swift */; };
 		B155055B19816930003BA89B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B155055919816930003BA89B /* Main.storyboard */; };
 		B155055D19816930003BA89B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B155055C19816930003BA89B /* Images.xcassets */; };
 		B155056919816930003BA89B /* UIKit_Dynamics_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B155056819816930003BA89B /* UIKit_Dynamics_DemoTests.swift */; };
@@ -26,11 +31,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B11DC99D198CDF8800904C17 /* PushOffTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushOffTransition.swift; sourceTree = "<group>"; };
+		B11DC9A0198CEADD00904C17 /* SwipeInTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeInTransition.swift; sourceTree = "<group>"; };
+		B11DC9A2198D20D300904C17 /* SwingInTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwingInTransition.swift; sourceTree = "<group>"; };
+		B13C9379198ACA8700728A5B /* DropInTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropInTransition.swift; sourceTree = "<group>"; };
+		B152F697198911DB006081AF /* TransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
 		B155054E19816930003BA89B /* UIKit Dynamics Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKit Dynamics Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B155055219816930003BA89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B155055319816930003BA89B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B155055519816930003BA89B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		B155055719816930003BA89B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		B155055519816930003BA89B /* GravityFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GravityFirstViewController.swift; sourceTree = "<group>"; };
+		B155055719816930003BA89B /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		B155055A19816930003BA89B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B155055C19816930003BA89B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B155056219816930003BA89B /* UIKit Dynamics DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIKit Dynamics DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +66,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B11DC99F198CE23100904C17 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				B13C9379198ACA8700728A5B /* DropInTransition.swift */,
+				B11DC9A0198CEADD00904C17 /* SwipeInTransition.swift */,
+				B11DC9A2198D20D300904C17 /* SwingInTransition.swift */,
+				B11DC99D198CDF8800904C17 /* PushOffTransition.swift */,
+			);
+			name = Transitions;
+			sourceTree = "<group>";
+		};
 		B155054519816930003BA89B = {
 			isa = PBXGroup;
 			children = (
@@ -77,9 +98,10 @@
 		B155055019816930003BA89B /* UIKit Dynamics Demo */ = {
 			isa = PBXGroup;
 			children = (
-				B155055319816930003BA89B /* AppDelegate.swift */,
-				B155055519816930003BA89B /* FirstViewController.swift */,
-				B155055719816930003BA89B /* SecondViewController.swift */,
+				B155055519816930003BA89B /* GravityFirstViewController.swift */,
+				B155055719816930003BA89B /* QuizViewController.swift */,
+				B152F697198911DB006081AF /* TransitionViewController.swift */,
+				B11DC99F198CE23100904C17 /* Transitions */,
 				B155055919816930003BA89B /* Main.storyboard */,
 				B155055C19816930003BA89B /* Images.xcassets */,
 				B155055119816930003BA89B /* Supporting Files */,
@@ -90,6 +112,7 @@
 		B155055119816930003BA89B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B155055319816930003BA89B /* AppDelegate.swift */,
 				B155055219816930003BA89B /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -211,9 +234,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B155055819816930003BA89B /* SecondViewController.swift in Sources */,
+				B11DC99E198CDF8800904C17 /* PushOffTransition.swift in Sources */,
+				B13C937A198ACA8700728A5B /* DropInTransition.swift in Sources */,
+				B155055819816930003BA89B /* QuizViewController.swift in Sources */,
+				B11DC9A1198CEADD00904C17 /* SwipeInTransition.swift in Sources */,
+				B11DC9A3198D20D300904C17 /* SwingInTransition.swift in Sources */,
 				B155055419816930003BA89B /* AppDelegate.swift in Sources */,
-				B155055619816930003BA89B /* FirstViewController.swift in Sources */,
+				B155055619816930003BA89B /* GravityFirstViewController.swift in Sources */,
+				B152F698198911DB006081AF /* TransitionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +427,7 @@
 				B155056E19816930003BA89B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B155056F19816930003BA89B /* Build configuration list for PBXNativeTarget "UIKit Dynamics DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +436,7 @@
 				B155057119816930003BA89B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
