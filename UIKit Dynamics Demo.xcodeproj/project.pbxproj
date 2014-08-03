@@ -11,6 +11,10 @@
 		B11DC9A1198CEADD00904C17 /* SwipeInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11DC9A0198CEADD00904C17 /* SwipeInTransition.swift */; };
 		B11DC9A3198D20D300904C17 /* SwingInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11DC9A2198D20D300904C17 /* SwingInTransition.swift */; };
 		B11DC9A6198D4E7900904C17 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B11DC9A5198D4E7900904C17 /* README.md */; };
+		B11DC9A8198E415600904C17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11DC9A7198E415600904C17 /* Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B11DC9AA198E417200904C17 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11DC9A9198E417200904C17 /* CoreMotion.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B11DC9AC198E41A300904C17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11DC9AB198E41A300904C17 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B11DC9AE198E41F700904C17 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11DC9AD198E41F700904C17 /* CFNetwork.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B13C937A198ACA8700728A5B /* DropInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13C9379198ACA8700728A5B /* DropInTransition.swift */; };
 		B152F698198911DB006081AF /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B152F697198911DB006081AF /* TransitionViewController.swift */; };
 		B155055419816930003BA89B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B155055319816930003BA89B /* AppDelegate.swift */; };
@@ -36,6 +40,10 @@
 		B11DC9A0198CEADD00904C17 /* SwipeInTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeInTransition.swift; sourceTree = "<group>"; };
 		B11DC9A2198D20D300904C17 /* SwingInTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwingInTransition.swift; sourceTree = "<group>"; };
 		B11DC9A5198D4E7900904C17 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		B11DC9A7198E415600904C17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B11DC9A9198E417200904C17 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		B11DC9AB198E41A300904C17 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B11DC9AD198E41F700904C17 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		B13C9379198ACA8700728A5B /* DropInTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropInTransition.swift; sourceTree = "<group>"; };
 		B152F697198911DB006081AF /* TransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
 		B155054E19816930003BA89B /* UIKit Dynamics Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKit Dynamics Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B11DC9A8198E415600904C17 /* Foundation.framework in Frameworks */,
+				B11DC9AE198E41F700904C17 /* CFNetwork.framework in Frameworks */,
+				B11DC9AC198E41A300904C17 /* UIKit.framework in Frameworks */,
+				B11DC9AA198E417200904C17 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +104,8 @@
 		B155054519816930003BA89B = {
 			isa = PBXGroup;
 			children = (
+				B11DC9AD198E41F700904C17 /* CFNetwork.framework */,
+				B11DC9AB198E41A300904C17 /* UIKit.framework */,
 				B155055019816930003BA89B /* UIKit Dynamics Demo */,
 				B155056519816930003BA89B /* UIKit Dynamics DemoTests */,
 				B155054F19816930003BA89B /* Products */,
@@ -141,6 +155,8 @@
 		B155056619816930003BA89B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B11DC9A9198E417200904C17 /* CoreMotion.framework */,
+				B11DC9A7198E415600904C17 /* Foundation.framework */,
 				B155056719816930003BA89B /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -369,7 +385,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "UIKit Dynamics Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -380,7 +398,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "UIKit Dynamics Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
