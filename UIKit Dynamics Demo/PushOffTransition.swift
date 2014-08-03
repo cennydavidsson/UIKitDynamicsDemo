@@ -19,10 +19,10 @@ class PushOffTransition: NSObject, UIViewControllerAnimatedTransitioning {
     func animateTransition(transitionContext: UIViewControllerContextTransitioning!) {
         
         // Get view, controllers and frames to work with
-        let toView = transitionContext.viewForKey(UITransitionContextToViewKey)
+        let toView = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey).view
         let fromVC = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)
         let fromFrame = transitionContext.initialFrameForViewController(fromVC)
-        let fromView = transitionContext.viewForKey(UITransitionContextFromViewKey)
+        let fromView = fromVC.view
         
         // Container view is where the animation takes place so we need to add all view to animate here
         transitionContext.containerView().addSubview(toView)

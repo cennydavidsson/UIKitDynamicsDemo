@@ -27,7 +27,7 @@ class SwipeInTransition: NSObject, UIViewControllerAnimatedTransitioning, UIDyna
         self.transitionContext = transitionContext?
         
         // Get view, controllers and frames to work with
-        let toView = transitionContext.viewForKey(UITransitionContextToViewKey)
+        let toView = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey).view
         let fromVC = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)
         let fromFrame = transitionContext.initialFrameForViewController(fromVC)
         
