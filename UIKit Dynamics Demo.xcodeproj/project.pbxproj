@@ -10,7 +10,6 @@
 		B11DC99E198CDF8800904C17 /* PushOffTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11DC99D198CDF8800904C17 /* PushOffTransition.swift */; };
 		B11DC9A1198CEADD00904C17 /* SwipeInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11DC9A0198CEADD00904C17 /* SwipeInTransition.swift */; };
 		B11DC9A3198D20D300904C17 /* SwingInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11DC9A2198D20D300904C17 /* SwingInTransition.swift */; };
-		B11DC9A6198D4E7900904C17 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B11DC9A5198D4E7900904C17 /* README.md */; };
 		B11DC9A8198E415600904C17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11DC9A7198E415600904C17 /* Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B11DC9AA198E417200904C17 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11DC9A9198E417200904C17 /* CoreMotion.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B11DC9AC198E41A300904C17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11DC9AB198E41A300904C17 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -267,7 +266,6 @@
 				B11DC9A1198CEADD00904C17 /* SwipeInTransition.swift in Sources */,
 				B11DC9A3198D20D300904C17 /* SwingInTransition.swift in Sources */,
 				B155055419816930003BA89B /* AppDelegate.swift in Sources */,
-				B11DC9A6198D4E7900904C17 /* README.md in Sources */,
 				B155055619816930003BA89B /* GravityFirstViewController.swift in Sources */,
 				B152F698198911DB006081AF /* TransitionViewController.swift in Sources */,
 			);
