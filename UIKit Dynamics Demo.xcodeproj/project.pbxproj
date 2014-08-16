@@ -53,7 +53,6 @@
 		B155055A19816930003BA89B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B155055C19816930003BA89B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B155056219816930003BA89B /* UIKit Dynamics DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIKit Dynamics DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B155056719816930003BA89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B155056819816930003BA89B /* UIKit_Dynamics_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit_Dynamics_DemoTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,7 +155,6 @@
 			children = (
 				B11DC9A9198E417200904C17 /* CoreMotion.framework */,
 				B11DC9A7198E415600904C17 /* Foundation.framework */,
-				B155056719816930003BA89B /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

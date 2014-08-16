@@ -73,9 +73,8 @@ class QuizViewController: UIViewController {
         animator.addBehavior(snap)
         
         // Remove behavior when snap is done
-        weak var weakSnap = snap // FIXME: Not sure if this is the best way to do it
-        snap.action = {
-            if CGPointEqualToPoint(self.buttonOrgin, sender.center) { self.animator.removeBehavior(weakSnap) }
+        snap.action = { [unowned self, unowned snap] in // FIXME: Unsure if this is the best solution
+            if CGPointEqualToPoint(self.buttonOrgin, sender.center) { self.animator.removeBehavior(snap) }
         }
     }
 }
