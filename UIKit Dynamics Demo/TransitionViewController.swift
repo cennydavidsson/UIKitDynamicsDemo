@@ -26,7 +26,7 @@ class TransitionViewController: UIViewController, UIViewControllerTransitioningD
     
     // MARK: UIViewController
     
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         
         super.prepareForSegue(segue, sender: sender)
 
@@ -34,7 +34,7 @@ class TransitionViewController: UIViewController, UIViewControllerTransitioningD
         toVC.modalPresentationStyle = .Custom
         toVC.transitioningDelegate = self
         
-        switch segue.identifier! {
+        switch segue.identifier {
         case "drop":
             transition = .Drop
         case "swipe":

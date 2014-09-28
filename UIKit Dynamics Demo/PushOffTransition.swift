@@ -12,16 +12,16 @@ class PushOffTransition: NSObject, UIViewControllerAnimatedTransitioning {
     
     // MARK: UIViewControllerAnimatedTransitioning
     
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning!) -> NSTimeInterval {
+    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
         return 0.3
     }
     
-    func animateTransition(transitionContext: UIViewControllerContextTransitioning!) {
+    func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
         
         // Get view, controllers and frames to work with
         let fromVC = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)
-        let fromFrame = transitionContext.initialFrameForViewController(fromVC)
-        let fromView = fromVC.view
+        let fromFrame = transitionContext.initialFrameForViewController(fromVC!)
+        let fromView = transitionContext.viewForKey(UITransitionContextFromViewKey)!
         
         // Setup the animator
         let animator = UIDynamicAnimator(referenceView: transitionContext.containerView())
@@ -41,7 +41,7 @@ class PushOffTransition: NSObject, UIViewControllerAnimatedTransitioning {
         push.action = {
             if !CGRectIntersectsRect(transitionContext.containerView().frame, fromView.frame) {
                 animator.removeAllBehaviors()
-                transitionContext!.completeTransition(true) // IMPORTANT
+                transitionContext.completeTransition(true) // IMPORTANT
              }
         }
         

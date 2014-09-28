@@ -56,7 +56,7 @@ class GravityFirstViewController: UIViewController {
             // A function that conforms to CMDeviceMotionHandler and updates gravity
             // based on device orientation
             func gravityUpdated(motion: CMDeviceMotion!, error: NSError!) {
-                if error { println("\(error)") }
+                if (error != nil) { println("\(error)") }
                 
                 // Get and apply gravity to behavior
                 let motionGravity : CMAcceleration = motion.gravity
@@ -124,10 +124,10 @@ class GravityFirstViewController: UIViewController {
         case .Began:
             //
             let locationInButton = gesture.locationInView(gesture.view)
-            let offset = UIOffset(horizontal: locationInButton.x - CGRectGetWidth(gesture.view.frame)/2,
-                                    vertical: locationInButton.y - CGRectGetHeight(gesture.view.frame)/2)
+            let offset = UIOffset(horizontal: locationInButton.x - CGRectGetWidth(gesture.view!.frame)/2,
+                                    vertical: locationInButton.y - CGRectGetHeight(gesture.view!.frame)/2)
             //
-            attacthment = UIAttachmentBehavior(item: gesture.view, offsetFromCenter: offset, attachedToAnchor: gesture.locationInView(animatorRefView))
+            attacthment = UIAttachmentBehavior(item: gesture.view!, offsetFromCenter: offset, attachedToAnchor: gesture.locationInView(animatorRefView))
             animator.addBehavior(attacthment)
         case .Changed:
             //

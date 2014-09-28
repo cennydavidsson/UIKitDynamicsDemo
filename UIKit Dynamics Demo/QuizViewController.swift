@@ -40,7 +40,7 @@ class QuizViewController: UIViewController {
         buttonOrgin = sender.center
         
         // Get location of tuch in button
-        let touch = event.allTouches().anyObject() as UITouch
+        let touch = event.allTouches()!.anyObject() as UITouch
         let locationInButton = touch.locationInView(sender)
         let offset = UIOffset(horizontal: locationInButton.x - CGRectGetWidth(sender.frame)/2,
                                 vertical: locationInButton.y - CGRectGetHeight(sender.frame)/2)

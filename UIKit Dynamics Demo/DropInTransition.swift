@@ -17,18 +17,18 @@ class DropInTransition: NSObject, UIViewControllerAnimatedTransitioning, UIDynam
     
     // MARK: UIViewControllerAnimatedTransitioning
     
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning!) -> NSTimeInterval {
+    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
         return 0.3
     }
     
-    func animateTransition(transitionContext: UIViewControllerContextTransitioning!) {
+    func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
         
         // Setup transitionContext to use later in delegate method
-        self.transitionContext = transitionContext?
+        self.transitionContext = transitionContext
         
         // Get view, controllers and frames to work with
-        let toView = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey).view
-        let fromVC = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)
+        let toView = transitionContext.viewForKey(UITransitionContextToViewKey)!
+        let fromVC = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!
         let fromFrame = transitionContext.initialFrameForViewController(fromVC)
         
         // Container view is where the animation takes place so we need to add all view to animate here
